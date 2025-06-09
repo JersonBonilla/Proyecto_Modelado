@@ -340,7 +340,7 @@ class Simulation:
             msg.start_queue_time = self.clock
             self.proc_c3.queue.append(msg)
             if not self.proc_c3.busy:
-                self.start_proc(self.proc_c3, EVENT_FINISH_C3, self.tri_density())
+                self.start_proc(self.proc_c3, EVENT_FINISH_C3, c3_processing_time())
             left_system = False
 
         # Only count as sent if the message leaves the system.
