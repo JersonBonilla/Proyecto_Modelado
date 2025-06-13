@@ -73,6 +73,6 @@ Entre runs el programa le preguntará al usuario si desea ver las estadísticas 
 
 ![Estadisticas](img/stats.png)
 
-- Ejemplo de resultados finales generales
+- Ejemplo de resultados finales generales:
 
 ![Summary](img/summary.png)
