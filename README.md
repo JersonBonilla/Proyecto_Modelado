@@ -72,3 +72,7 @@ Entre runs el programa le preguntará al usuario si desea ver las estadísticas 
 - Ejemplo de estadisticas entre corridas:
 
 ![Estadisticas](img/stats.png)
+
+- Ejemplo de resultados finales generales
+
+![Summary](img/summary.png)
