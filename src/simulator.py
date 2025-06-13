@@ -116,8 +116,8 @@ class Simulation:
 
         # End of simulation
         print("\n" + "="*50)
-        print(f"✔️ Simulation complete at t = {self.clock:.2f} s")
-        print(f"📦 Total messages processed: {len(self.messages)}")
+        print(f"- Simulation complete at t = {self.clock:.2f} s")
+        print(f"- Total messages processed: {len(self.messages)}")
         print("="*50)
     
 
@@ -133,27 +133,27 @@ class Simulation:
         print(f"Run #{self.run_number} | Clock: {self.clock:.2f} s")
         
         # Print event happening now.
-        print(f"📍 Event: {event.event_type} from {event.source}")
+        print(f"- Event: {event.event_type} from {event.source}")
 
         # Print queues sizes of the three processors.
-        print(f"📦 Queue sizes -> C2: {len(self.proc_c2.queue)}, C3: {len(self.proc_c3.queue)}, C1: {len(self.c1_input)}")
+        print(f"- Queue sizes -> C2: {len(self.proc_c2.queue)}, C3: {len(self.proc_c3.queue)}, C1: {len(self.c1_input)}")
 
         # Function that shows IDs of messages in each queue.
         def queue_ids(q): return [m.id for m in q]
 
         # Print contents of each queue as lists of IDs.
-        print(f"🔎 Queue contents ->")
+        print(f"- Queue contents ->")
         print(f"   - C2: {queue_ids(self.proc_c2.queue)}")
         print(f"   - C3: {queue_ids(self.proc_c3.queue)}")
         print(f"   - C1: {queue_ids(self.c1_input)}")
 
         # Status of each processor.
-        print(f"⚙️  Processor states -> C2: {'Busy' if self.proc_c2.busy else 'Idle'}, "
+        print(f"-  Processor states -> C2: {'Busy' if self.proc_c2.busy else 'Idle'}, "
             f"C3: {'Busy' if self.proc_c3.busy else 'Idle'}, "
             f"C1: {'Busy' if self.proc_c1.busy else 'Idle'}")
 
         # Totals accumulated at the moment.
-        print(f"📊 Totals so far:")
+        print(f"- Totals so far:")
         print(f"   - Messages arrived to C2: {self.arrivals_c2}")
         print(f"   - Messages arrived to C3: {self.arrivals_c3}")
         print(f"   - Messages rejected by C3: {self.rejected_by_c3}")
@@ -163,7 +163,7 @@ class Simulation:
 
         # Show the ID of the last message if there is one.
         if self.messages:
-            print(f"🆔 Last message ID: {self.messages[-1].id}")
+            print(f"- Last message ID: {self.messages[-1].id}")
 
 
     def handle(self, e):
