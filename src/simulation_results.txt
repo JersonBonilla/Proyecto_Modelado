@@ -1,0 +1,190 @@
+=== DETAILED RUN STATISTICS ===
+
+--- Run 1 ---
+Avg time (C2)           : 40.2607 s
+Avg time (C3)           : 16.2356 s
+Avg time (Rejected)     : 12.0302 s
+Avg total time          : 20.2408 s
+Efficiency (C2)         : 0.7248 
+Efficiency (C3)         : 0.6723 
+Efficiency (Rejected)   : 0.3941 
+Overall efficiency      : 0.5137 
+Utilization (C1)        : 0.4554 %
+Utilization (C2)        : 0.6692 %
+Utilization (C3)        : 0.9275 %
+Total Trio Time         : 297.9207 s
+Trio Occupancy %        : 0.2979 
+
+--- Run 2 ---
+Avg time (C2)           : 29.1916 s
+Avg time (C3)           : 10.3588 s
+Avg time (Rejected)     : 7.1878 s
+Avg total time          : 12.8409 s
+Efficiency (C2)         : 0.7431 
+Efficiency (C3)         : 0.6608 
+Efficiency (Rejected)   : 0.1935 
+Overall efficiency      : 0.3664 
+Utilization (C1)        : 0.3385 %
+Utilization (C2)        : 0.6078 %
+Utilization (C3)        : 0.8942 %
+Total Trio Time         : 188.9713 s
+Trio Occupancy %        : 0.1890 
+
+--- Run 3 ---
+Avg time (C2)           : 18.3306 s
+Avg time (C3)           : 12.4226 s
+Avg time (Rejected)     : 8.4543 s
+Avg total time          : 10.9069 s
+Efficiency (C2)         : 0.6829 
+Efficiency (C3)         : 0.6699 
+Efficiency (Rejected)   : 0.2609 
+Overall efficiency      : 0.3872 
+Utilization (C1)        : 0.3330 %
+Utilization (C2)        : 0.5081 %
+Utilization (C3)        : 0.8986 %
+Total Trio Time         : 139.2315 s
+Trio Occupancy %        : 0.1392 
+
+--- Run 4 ---
+Avg time (C2)           : 18.8054 s
+Avg time (C3)           : 14.5601 s
+Avg time (Rejected)     : 8.3433 s
+Avg total time          : 11.7497 s
+Efficiency (C2)         : 0.7568 
+Efficiency (C3)         : 0.5955 
+Efficiency (Rejected)   : 0.2544 
+Overall efficiency      : 0.4217 
+Utilization (C1)        : 0.3726 %
+Utilization (C2)        : 0.5833 %
+Utilization (C3)        : 0.8643 %
+Total Trio Time         : 185.7131 s
+Trio Occupancy %        : 0.1857 
+
+--- Run 5 ---
+Avg time (C2)           : 26.7163 s
+Avg time (C3)           : 12.5728 s
+Avg time (Rejected)     : 8.1222 s
+Avg total time          : 13.3820 s
+Efficiency (C2)         : 0.7108 
+Efficiency (C3)         : 0.5876 
+Efficiency (Rejected)   : 0.2524 
+Overall efficiency      : 0.3986 
+Utilization (C1)        : 0.4264 %
+Utilization (C2)        : 0.6928 %
+Utilization (C3)        : 0.9087 %
+Total Trio Time         : 294.7120 s
+Trio Occupancy %        : 0.2947 
+
+--- Run 6 ---
+Avg time (C2)           : 18.7964 s
+Avg time (C3)           : 10.8841 s
+Avg time (Rejected)     : 8.6815 s
+Avg total time          : 11.4521 s
+Efficiency (C2)         : 0.7024 
+Efficiency (C3)         : 0.6744 
+Efficiency (Rejected)   : 0.2935 
+Overall efficiency      : 0.4296 
+Utilization (C1)        : 0.3738 %
+Utilization (C2)        : 0.5926 %
+Utilization (C3)        : 0.8854 %
+Total Trio Time         : 200.2676 s
+Trio Occupancy %        : 0.2003 
+
+--- Run 7 ---
+Avg time (C2)           : 17.4656 s
+Avg time (C3)           : 12.7179 s
+Avg time (Rejected)     : 8.0606 s
+Avg total time          : 11.1106 s
+Efficiency (C2)         : 0.6945 
+Efficiency (C3)         : 0.6378 
+Efficiency (Rejected)   : 0.2652 
+Overall efficiency      : 0.4214 
+Utilization (C1)        : 0.4102 %
+Utilization (C2)        : 0.6274 %
+Utilization (C3)        : 0.8685 %
+Total Trio Time         : 231.5246 s
+Trio Occupancy %        : 0.2315 
+
+--- Run 8 ---
+Avg time (C2)           : 16.4878 s
+Avg time (C3)           : 13.9498 s
+Avg time (Rejected)     : 9.6826 s
+Avg total time          : 11.7724 s
+Efficiency (C2)         : 0.7051 
+Efficiency (C3)         : 0.6616 
+Efficiency (Rejected)   : 0.3498 
+Overall efficiency      : 0.4705 
+Utilization (C1)        : 0.3796 %
+Utilization (C2)        : 0.4938 %
+Utilization (C3)        : 0.9290 %
+Total Trio Time         : 187.3652 s
+Trio Occupancy %        : 0.1874 
+
+--- Run 9 ---
+Avg time (C2)           : 26.9856 s
+Avg time (C3)           : 14.1965 s
+Avg time (Rejected)     : 10.7744 s
+Avg total time          : 15.9106 s
+Efficiency (C2)         : 0.7371 
+Efficiency (C3)         : 0.6686 
+Efficiency (Rejected)   : 0.3383 
+Overall efficiency      : 0.4904 
+Utilization (C1)        : 0.4929 %
+Utilization (C2)        : 0.7197 %
+Utilization (C3)        : 0.9305 %
+Total Trio Time         : 341.6820 s
+Trio Occupancy %        : 0.3417 
+
+--- Run 10 ---
+Avg time (C2)           : 17.9869 s
+Avg time (C3)           : 10.2919 s
+Avg time (Rejected)     : 7.4623 s
+Avg total time          : 10.6133 s
+Efficiency (C2)         : 0.7465 
+Efficiency (C3)         : 0.5684 
+Efficiency (Rejected)   : 0.2229 
+Overall efficiency      : 0.3965 
+Utilization (C1)        : 0.3703 %
+Utilization (C2)        : 0.6359 %
+Utilization (C3)        : 0.8592 %
+Total Trio Time         : 199.8590 s
+Trio Occupancy %        : 0.1999 
+
+========================================
+RUN SUMMARIES
+========================================
+Run  1: Avg Total Time (T_ALL) = 20.24 s | Efficiency = 0.51
+Run  2: Avg Total Time (T_ALL) = 12.84 s | Efficiency = 0.37
+Run  3: Avg Total Time (T_ALL) = 10.91 s | Efficiency = 0.39
+Run  4: Avg Total Time (T_ALL) = 11.75 s | Efficiency = 0.42
+Run  5: Avg Total Time (T_ALL) = 13.38 s | Efficiency = 0.40
+Run  6: Avg Total Time (T_ALL) = 11.45 s | Efficiency = 0.43
+Run  7: Avg Total Time (T_ALL) = 11.11 s | Efficiency = 0.42
+Run  8: Avg Total Time (T_ALL) = 11.77 s | Efficiency = 0.47
+Run  9: Avg Total Time (T_ALL) = 15.91 s | Efficiency = 0.49
+Run 10: Avg Total Time (T_ALL) = 10.61 s | Efficiency = 0.40
+
+========================================
+AVERAGE METRICS
+========================================
+Avg time (C2)           : 23.1027 s
+Avg time (C3)           : 12.8190 s
+Avg time (Rejected)     : 8.8799 s
+Avg total time          : 12.9979 s
+Efficiency (C2)         : 0.7204 
+Efficiency (C3)         : 0.6397 
+Efficiency (Rejected)   : 0.2825 
+Overall efficiency      : 0.4296 
+Utilization (C1)        : 0.3953 %
+Utilization (C2)        : 0.6131 %
+Utilization (C3)        : 0.8966 %
+Total Trio Time         : 226.7247 s
+Trio Occupancy %        : 0.2267 
+
+========================================
+95% CONFIDENCE INTERVALS
+========================================
+Time (C2)         : [18.39, 27.82] s
+Time (C3)         : [11.61, 14.03] s
+Time (Rejected)   : [7.94, 9.82] s
+Total Time        : [11.15, 14.85] s

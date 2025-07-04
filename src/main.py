@@ -120,6 +120,78 @@ def run_simulations(runs=5, duration=100, slow=False):
         values = [s[key] for s in all_stats]
         ci = confidence_interval(values)
         print(f"{names[key]:<18}: [{ci[0]:.2f}, {ci[1]:.2f}] s")
+    
+    with open("simulation_results.txt", "w") as f:
+        f.write("=== DETAILED RUN STATISTICS ===\n\n")
+        for s in all_stats:
+            f.write(f"--- Run {s['run']} ---\n")
+            for key, val in s.items():
+                if key.startswith("CI_") or key == "run":
+                    continue
+                label = {
+                    'T_C2': 'Avg time (C2)',
+                    'T_C3': 'Avg time (C3)',
+                    'T_RJ': 'Avg time (Rejected)',
+                    'T_ALL': 'Avg total time',
+                    'E_C2': 'Efficiency (C2)',
+                    'E_C3': 'Efficiency (C3)',
+                    'E_RJ': 'Efficiency (Rejected)',
+                    'E_ALL': 'Overall efficiency',
+                    'U_C1': 'Utilization (C1)',
+                    'U_C2': 'Utilization (C2)',
+                    'U_C3': 'Utilization (C3)',
+                    'TRIO_TIME': 'Total Trio Time',
+                    'TRIO_PERCENT': 'Trio Occupancy %'
+                }.get(key, key)
+                unit = "s" if "time" in label.lower() else ("%" if "Percent" in key or "Utilization" in label else "")
+                f.write(f"{label:<24}: {val:.4f} {unit}\n")
+            f.write("\n")
+
+        f.write("="*40 + "\n")
+        f.write("RUN SUMMARIES\n")
+        f.write("="*40 + "\n")
+        for s in all_stats:
+            f.write(f"Run {s['run']:>2}: Avg Total Time (T_ALL) = {s['T_ALL']:.2f} s | Efficiency = {s['E_ALL']:.2f}\n")
+
+        f.write("\n" + "="*40 + "\n")
+        f.write("AVERAGE METRICS\n")
+        f.write("="*40 + "\n")
+        for key in [k for k in all_stats[0] if k != 'run' and not k.startswith('CI_')]:
+            vals = [s[key] for s in all_stats]
+            label = {
+                'T_C2': 'Avg time (C2)',
+                'T_C3': 'Avg time (C3)',
+                'T_RJ': 'Avg time (Rejected)',
+                'T_ALL': 'Avg total time',
+                'E_C2': 'Efficiency (C2)',
+                'E_C3': 'Efficiency (C3)',
+                'E_RJ': 'Efficiency (Rejected)',
+                'E_ALL': 'Overall efficiency',
+                'U_C1': 'Utilization (C1)',
+                'U_C2': 'Utilization (C2)',
+                'U_C3': 'Utilization (C3)',
+                'TRIO_TIME': 'Total Trio Time',
+                'TRIO_PERCENT': 'Trio Occupancy %'
+            }.get(key, key)
+            unit = "s" if "time" in label.lower() else ("%" if "Percent" in key or "Utilization" in label else "")
+            f.write(f"{label:<24}: {sum(vals)/len(vals):.4f} {unit}\n")
+
+        f.write("\n" + "="*40 + "\n")
+        f.write("95% CONFIDENCE INTERVALS\n")
+        f.write("="*40 + "\n")
+        names = {
+            'T_C2': 'Time (C2)',
+            'T_C3': 'Time (C3)',
+            'T_RJ': 'Time (Rejected)',
+            'T_ALL': 'Total Time'
+        }
+
+        for key in ['T_C2', 'T_C3', 'T_RJ', 'T_ALL']:
+            values = [s[key] for s in all_stats]
+            ci = confidence_interval(values)
+            f.write(f"{names[key]:<18}: [{ci[0]:.2f}, {ci[1]:.2f}] s\n")
+
+    print("\nResults saved to 'simulation_results.txt'!")
 
 
 if __name__ == "__main__":
@@ -139,3 +211,4 @@ if __name__ == "__main__":
 
     # Execute simulations
     run_simulations(runs=runs, duration=duration, slow=slow)
+    
